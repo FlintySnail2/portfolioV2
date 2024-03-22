@@ -1,0 +1,210 @@
+#about {
+   background: #314455 ;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 60% 50%;
+    color: #fff;
+    gap: 5%;
+    padding: 2em 10em;
+    padding-bottom: 6em;
+}
+
+.about__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+
+.about__me {
+    width: 55%;
+    height: 105%;
+    border-radius: 2em;
+    background: #1d2731;
+    display: grid;
+    place-items: center;
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5em
+}
+
+.about__card  {
+    background: #1d2731;
+    border:1px solid transparent;
+    border-radius: 1em;
+    padding:2em;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about__card:hover {
+    background: transparent ;
+    border-color: var(--color-primary-variant);
+    cursor:default;
+}
+
+.about__icon {
+    color: var(--color-primary);
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+.about__card h5 {
+    font-size: 0.95em;
+}
+
+
+.about__card small {
+    font-size: 0.7em;
+    color: var(--color-light);
+}
+
+.about__content p {
+    margin: 2em 0 2.6em;
+    color: var(--color-light);
+}
+
+/* ====== MEDIA QUERIES (LARGE TABLETS LANDSCAPE)=====*/
+@media only screen and (max-width: 1180px) {
+    .about__container {
+        padding: 0 1em;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10em;
+        padding-bottom: 4em;
+        gap: 10%;
+    }
+
+    .about__card {
+        width: 150px ;
+        height: 120px;
+        padding:1em;
+    } 
+
+}
+
+/* ====== MEDIA QUERIES (SMALL TABLETS LANDSCAPE) =====*/
+@media only screen and (max-width: 1024px) {
+
+    #about{
+        width: 100%;
+        padding: .5em;
+        padding-bottom: 4em;
+    }
+
+    .about__container {
+        padding: .5em 2em;
+        max-width: 87.5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about__me { 
+        width: 70%;
+        padding: 2em;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__cards {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about__card {
+        width: 150px ;
+        height: 150px;
+        padding:1em;
+    } 
+}
+
+@media only screen  and (max-width: 820px) {
+    #about {
+        width: 100%;
+    }
+    .about__container {
+        padding: .5em;
+        padding-left: 3em;
+        padding-bottom: 4em;
+    }
+  }
+
+/* ====== MEDIA QUERIES (SMALL TABLET LANDSCAPE)=====*/
+@media only screen and (max-width: 768px) {
+
+    #about {
+        width: 100% ;
+        padding:.5em ;
+        padding-left: 2em;
+        
+    }
+
+    .about__container {
+        padding: .5em;
+        padding-left: 1em;
+        padding-bottom: 4em;
+    }
+
+    .about__me { 
+        width: 100%;
+        padding: 1.25em;
+    }
+
+    .about__card {
+        width: 115px ;
+        height: 115px;
+        padding: .5em;
+    }
+    
+    .about__cards {
+        padding: 0.5em;
+        padding-right: -5px;
+    }
+}
+
+/* ====== MEDIA QUERIES (SMALL DEVICES)=====*/
+@media only screen and (max-width: 414px) {
+
+    #about {
+        width: 101% ;
+        padding:.5em ;
+    }
+
+    .about__container {
+        padding: 0;
+        padding-left: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about__me { 
+        width: 100%;
+        padding: 1.5em;
+        justify-content: center;
+    }
+
+    .about__cards {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+    }
+
+    .about__card {
+        width: 150px ;
+        height: 150px;
+        padding:1em;
+    } 
+}
+

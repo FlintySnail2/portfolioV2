@@ -1,0 +1,136 @@
+.projectCard__container {
+    background-color: #1d2731;
+    margin: 0 1rem 0rem 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    height: auto; 
+  }
+  
+  .projectCard__container:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  .projectCard__container h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #e2e2e2;
+    padding: 1rem;
+    height: auto;
+  }
+  
+  .projectCard__image {
+    width: 90%;
+    height: 30%;
+    border-radius: 0.5rem;
+  }
+  
+  .projectCard__content {
+    margin: 1rem;
+    display: flex;
+  }
+  
+  .projectCard__content p {
+    color: #e2e2e2;
+    padding: 0.5rem 0 0 1.5rem;
+  }
+  
+  .projectCard__description {
+    color: #e2e2e2;
+    text-align: center;
+    padding: 2rem 1.5rem ;
+  }
+  
+  .projectCard__links {
+    padding-bottom:2em;
+    display: flex;
+  }
+  
+  .projectCard__btn {
+    background-color: #e2e2e2;
+    width: auto;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .projectCard__btn:hover {
+    background: rgba(226, 226, 226, 0.5);
+  }
+  
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #000;
+  }
+  
+  .projectCard__btn:hover {
+    cursor: pointer;
+  }
+  
+  .projectCard__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  /* ======= MEDIA QUERIES (SMALL TABLETS LANDSCAPE ) ===========*/
+@media only screen and (max-width:1180px) {
+  .projectCard__container {
+   width: 100%;
+  }
+}
+
+
+  /* =========== MEDIA QUERIES (SMALL TABLETS PORTRAIT)=========*/
+@media only screen and (max-width:1024px) {
+
+  .projectCard__container {
+    width: 100%;
+    margin: 0.4rem 0 ;
+    margin-bottom: 2em;
+  } 
+
+  .projectCard__image {
+    height: 54%;
+    width:80%;
+    }
+  }
+
+  @media only screen and (max-width:820px) {
+    .projectCard__container {
+      width: 100%;
+    }
+  }
+  
+
+    /* =========== MEDIA QUERIES (SMALL TABLETS LANDSCAPE)=========*/
+  @media only screen and (max-width:768px) {
+
+    .projectCard__container {
+      width: 100%;
+    } 
+  }
+
+  /* =========== MEDIA QUERIES (SMALL DEVICES)=========*/
+@media only screen and (max-width:414px){
+  .projectCard__container {
+    width: 100%;
+  }  
+
+  .projectCard__links {
+    display: block;
+  }
+}  

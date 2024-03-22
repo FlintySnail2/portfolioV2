@@ -1,0 +1,253 @@
+.contact {
+    background:  #212121;
+    padding-top: 1.5em;
+    height: auto;
+    width: 100%;
+    margin: 0 auto ;
+    padding-bottom: 4em;
+}
+
+.contact__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+
+.contact__container {
+   
+    width:100%;
+    display:grid;
+    grid-template-columns: 30% 58%;     
+    gap: 20%;
+    padding: 2em 5em 0 15em  ;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    padding-left: 1em
+}
+
+.contact__option {
+    background: #314455; 
+    padding:1.2em;
+    border-radius: 1.2em;
+    text-align: center;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.contact__option:hover {
+    background: rgba(49, 68, 85,0.5);
+    border-color: rgba(49, 68, 85,0.5);
+}
+
+.contact__option-icon {
+    font-size: 1.5em;
+    margin-bottom: 0,5em;
+}
+
+.contact__option a {
+    margin-top: 0.7em;
+    display: inline-block;
+    font-size: 0.8em;
+    color:#fff;
+}
+
+.contact__option a:hover {
+    color:#AAAAAA;
+}
+
+/*======== Social Links ==============  */
+.social__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:0; 
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    text-align: center; 
+    padding: .5em;
+  }
+
+.icon-linkedin {
+    fill: #0275b4;
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+  }
+  
+  .icon-github {
+    fill: #fff; 
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+  }
+
+/* ========= FORM =========*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap:1.2em;
+}
+
+input, textarea {
+    width:80%;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    background: transparent;
+    border: 2px solid rgba(49, 68, 85,0.5);
+    resize:none;
+    color: #fff;
+}
+
+/* ======= MEDIA QUERIES (LARGE TABLETS LANDSCAPE ) ===========*/
+@media only screen and (max-width:1180px) {
+    .contact {
+        width:100%;
+        margin: 0;
+        min-height: 75vh;
+    }
+
+    .social__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:0;
+    }
+
+    .contact__container {
+   
+        width:100%;
+        display:grid;
+        grid-template-columns: 30% 58%;     
+        gap: 12%;
+        padding-left: 10em ;
+    }
+
+    .contact__options {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap:1.2em;
+        padding-right: 2em;
+    }
+    
+}
+
+/* ======= MEDIA QUERIES (SMALL TABLETS LANDSCAPE ) ===========*/
+@media only screen and (max-width:1024px) {
+    .contact {
+        width:100%;
+        margin: 0;
+        min-height: 80vh;
+    }
+
+    .social__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen  and (max-width: 820px) {
+    .contact{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact__container {
+   
+        width:135%;
+        display:grid;
+        grid-template-columns: 30% 58%;     
+        gap: 10%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .social__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap:1.2em;
+        width:70%;    
+    }
+  }
+
+@media only screen and (max-width:768px) {
+    .contact {
+        width:100%;
+        margin: 0;
+        min-height: 50vh;
+    }
+
+    .contact__container {
+   
+        width:135%;
+        display:grid;
+        grid-template-columns: 30% 58%;  
+        gap: 8%;
+    }
+
+    .social__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap:1.2em;
+        width:70%;
+    }
+    
+}
+
+/* ======= MEDIA QUERIES (SMALL DEVICES) ===========*/
+@media only screen and (max-width:414px) {
+    .contact {
+        width:100%; 
+        max-height: 100vh;   
+    }
+
+    .contact__container {
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12%;
+    }
+
+    .social__links {
+        justify-content: center;
+        padding: 0;
+    }
+
+    form {
+        display: none;
+    }
+}
+

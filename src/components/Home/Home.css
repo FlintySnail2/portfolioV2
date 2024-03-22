@@ -1,0 +1,109 @@
+.header__container {
+    text-align: center;
+    min-height: 80vh;
+    /* min-width:100% ; */
+    display: flex;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.home__text  {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 20rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* ============== CTA (CALL TO ACTION) =========== */
+.cta {
+    margin-top: 2,5em;
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 1.2em;
+    justify-content: center;
+}
+
+/* =================== HEADER IMAGE =============== */
+.home__image__high__res {
+    min-width: 100% ;
+    min-height: 100%;
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    z-index: 3;
+    background-image: url('../../assets/early-sunrays.png');
+}
+
+@media screen  and (max-width: 1180px) {
+    .header__container{
+        width: 100%;
+    }
+
+    .home__text {
+        margin-left: 0;
+        margin-right:0 ;
+        width: 100%;
+    }
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =========== */
+@media screen  and (max-width: 1024px) {
+    .header__container{
+        width: 100%;
+    }
+
+    .home__text {
+        margin-left: 0;
+        margin-right:0 ;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .header__container {
+        width: 100%;
+    }
+
+    .home__text {
+        margin-left: 0;
+        margin-right:0 ;
+        /* width: 100%; */
+    }
+  }
+
+/* =============== MEDIA QUERIES (TABLET LANDSCAPE) =========== */
+@media only screen and (max-width: 768px) {
+    .header__container{
+        width: 100%;
+    }
+
+    .home__text {
+        margin-left: 0;
+        margin-right:0 ;
+    }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =========== */
+
+@media only screen and (max-width: 414px) {
+    .header__container{
+        width: 101%;
+    }
+
+    .home__text {
+        margin-left: 0;
+        margin-right:0 ;
+    }
+}
+
+
+
+

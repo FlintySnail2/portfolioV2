@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+   display: none; 
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7;
+} 
+
+/* ======== GENERAL STYLES ========== */
+
+
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color:var(--color-white);
+}
+
+.btn{
+    width:max-content;
+    display: inline-block;
+    color: #fff;
+    padding: 0.75em 1.2em;
+    border-radius:0.4em;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-message {
+    background: #314455; 
+    color: #fff;
+    border:1px solid rgb(49, 68, 85); 
+}
+
+.btn-cv {
+    background: #314455; 
+    color: #fff;
+    border:1px solid rgb(49, 68, 85); 
+    }
+
+.btn-contact {
+   background:  #1d2731;
+}
+
+.btn:hover {
+    background: rgba(49, 68, 85,0.5); 
+    color: var(--color-light);
+    border-color: transparent;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color:var(--color-white);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+} 
+
+
