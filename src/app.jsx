@@ -8,6 +8,9 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/footer';
 
+//Add comment
+
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
