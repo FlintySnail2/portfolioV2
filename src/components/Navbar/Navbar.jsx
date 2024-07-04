@@ -2,7 +2,15 @@ import React, { useState, useEffect } from "react";
 import ScrollTo from "react-scroll-into-view";
 import "./Navbar.css";
 
-const Navbar = () => {
+const menuOptions = {
+  Portfolio: 'Portfolio',
+  About: "About",
+  Experience: "Experience",
+  Projects: "Projects",
+  ContactMe: "Contact Me",
+}
+
+export default function Navbar() {
   const [nav, setNav] = useState("");
 
   // Animation for navbar to decrease in size when scrolling down
@@ -20,42 +28,33 @@ const Navbar = () => {
     );
   }, []);
 
-  return (
-    <nav className={nav}>
-      <div className="logo">
-        <ScrollTo selector={"#Home"}>
-          <h4>Harry Mclean</h4>
-        </ScrollTo>
+  console.log('MenuOptions', menuOptions.Experience);
+
+  return <nav className={'nav'}>
+
+    <div className={'aaa'}>
+      <p>{menuOptions.Portfolio}</p>
+    </div>
+
+    <div className='nav-links'>
+
+
+      <div className={'bbb'}>
+        <p>{menuOptions.About}</p>
+        <p>{menuOptions.Experience}</p>
+        <p>{menuOptions.Projects}</p>
+        <p>{menuOptions.ContactMe}</p>
       </div>
-      <ul className="nav-links">
-        <li>
-          <ScrollTo selector={"#about"}>
-            <p>ABOUT</p>
-          </ScrollTo>
-        </li>
-        <li>
-          <ScrollTo selector={"#experience"}>
-            <p>EXPERIENCE</p>
-          </ScrollTo>
-        </li>
-        <li>
-          <ScrollTo selector={"#projects"}>
-            <p>PROJECTS</p>
-          </ScrollTo>
-        </li>
-        <li>
-          <ScrollTo selector={"#contact"}>
-            <p>CONTACT</p>
-          </ScrollTo>
-        </li>
-      </ul>
-      <div className="burger">
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
-      </div>
-    </nav>
-  );
+    </div>
+    {/*<div className="logo">*/}
+
+
+    {/*</div>*/}
+    <div className="burger">
+      {/*  <div className="line1"></div>*/}
+      {/*  <div className="line2"></div>*/}
+      {/*  <div className="line3"></div>*/}
+    </div>
+  </nav>
 };
 
-export default Navbar;
