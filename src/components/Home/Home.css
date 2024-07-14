@@ -1,10 +1,15 @@
 .header__container {
-    text-align: center;
-    min-height: 80vh;
-    /* min-width:100% ; */
     display: flex;
-    position: relative;
-    /* overflow: hidden; */
+    flex-direction: column;
+    /*justify-content: center;*/
+    margin-top: 100px;
+
+    /*text-align: center;*/
+    /*min-height: 80vh;*/
+    /* min-width:100% ;*/
+    /*display: flex;*/
+    /*position: relative;*/
+    /* overflow: hidden;*/
 }
 
 .home__text  {
@@ -21,11 +26,12 @@
 
 /* ============== CTA (CALL TO ACTION) =========== */
 .cta {
-    margin-top: 2,5em;
+    margin-top: 2.5em;
     padding-top: 1.5rem;
     display: flex;
     gap: 1.2em;
     justify-content: center;
+    height: 75px
 }
 
 /* =================== HEADER IMAGE =============== */

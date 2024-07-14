@@ -1,0 +1,25 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+svg {
+    max-width: 150px;
+    height: 5rem;
+    padding: 0 15px;
+    object-fit: cover;
+}
+
+svg:last-of-type {
+    padding-left: 0;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+}
+
+
+

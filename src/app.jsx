@@ -45,11 +45,11 @@ function App() {
     <div className='app__container'>
       <Navbar/>
       <Home/>
-      <About/>
-      <Experience/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      {/*<About/>*/}
+      {/*<Experience/>*/}
+      {/*<Projects/>*/}
+      {/*<Contact/>*/}
+      {/*<Footer/>*/}
     </div>
   )
 }

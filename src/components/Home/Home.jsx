@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 
 import './Home.css';
 import CTA from './cta';
+import Navbar from '../Navbar/Navbar';
+import Experience from '../experience/experience'
 
 const changingText = [
  'Graduate Software Developer', 'Analyst'
@@ -30,18 +32,34 @@ export default function Header () {
 
 
   return (
-    <header>
       <div className="header__container">
-        <div className='home__image__high__res'>
-          <div className='home__text'>
-            <h5> Hi, I'm </h5>
-            <h1> Harry Mclean </h1>
-            <h5 className="text-light">{changingText[currentIndex]}</h5>
+        <div style={{display: 'flex', flexDirection: 'row', border: 'solid red', justifyContent: 'space-evenly'}}>
+          <div style={{display: 'flex', border: 'purple solid', width: '500px', height: '500px', margin: '10px'}}>
+            ABOUT ME
             <CTA/>
           </div>
+          <div style={{display: 'flex', border: 'solid orange' ,background: 'orange',width: '500px', height: '500px', margin: '10px'}}>
+            Picture
+          </div>
+
         </div>
+        <div><Experience/></div>
       </div>
-    </header>
+
+
+
+      // <header>
+      //   <div className="header__container">
+    //     <div className='home__image__high__res'>
+    //       <div className='home__text'>
+    //         <h5> Hi, I'm </h5>
+    //         <h1> Harry Mclean </h1>
+    //         <h5 className="text-light">{changingText[currentIndex]}</h5>
+    //         <CTA/>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </header>
   )
 }
 

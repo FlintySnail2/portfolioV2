@@ -4,8 +4,8 @@ import "./Navbar.css";
 
 const menuOptions = {
   Portfolio: 'Portfolio',
-  About: "About",
-  Experience: "Experience",
+  About: "Home",
+  Experience: "Skills",
   Projects: "Projects",
   ContactMe: "Contact Me",
 }
@@ -28,18 +28,18 @@ export default function Navbar() {
     );
   }, []);
 
-  console.log('MenuOptions', menuOptions.Experience);
+  // console.log('MenuOptions', menuOptions.Experience);
 
   return <nav className={'nav'}>
 
-    <div className={'aaa'}>
-      <p>{menuOptions.Portfolio}</p>
-    </div>
+    {/*<div className={'aaa'}>*/}
+    {/*  <p>{menuOptions.Portfolio}</p>*/}
+    {/*</div>*/}
 
     <div className='nav-links'>
 
 
-      <div className={'bbb'}>
+      <div className={'menuItems'}>
         <p>{menuOptions.About}</p>
         <p>{menuOptions.Experience}</p>
         <p>{menuOptions.Projects}</p>
