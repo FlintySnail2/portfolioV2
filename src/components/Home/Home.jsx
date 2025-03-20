@@ -37,18 +37,14 @@ export default function Header() {
       <div style={{ display: 'flex', flexDirection: 'row', border: 'solid red', justifyContent: 'space-evenly' }}>
        
        
-        <div style={{ display: 'flex', flexDirection: 'column', border: 'purple solid', width: '600px', height: '500px', margin: '10px', padding: '10px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', borderRadius: '10px', boxShadow: '0 0 10px #dfdfdf', width: '600px', height: '500px', margin: '10px', padding: '10px'}}>
           <div>ABOUT ME</div>
-          
-          
-          
           <div> 
             <CTA />
             <AboutText />
           </div>
-
         </div>
-        <div style={{ display: 'flex', border: 'solid orange', background: 'orange', width: '600px', height: '500px', margin: '10px',padding: '10px' }}>
+        <div style={{ display: 'flex', borderRadius: '10px', boxShadow: '0 0 10px #dfdfdf', width: '600px', height: '500px', margin: '10px',padding: '10px' }}>
           Picture
         </div>
 
