@@ -31,11 +31,6 @@ export default function Navbar() {
   // console.log('MenuOptions', menuOptions.Experience);
 
   return <nav className={'nav'}>
-
-    {/*<div className={'aaa'}>*/}
-    {/*  <p>{menuOptions.Portfolio}</p>*/}
-    {/*</div>*/}
-
     <div className='nav-links'>
 
 
