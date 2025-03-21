@@ -10,9 +10,6 @@ const changingText = [
   'Graduate Software Developer', 'Analyst'
 ]
 
-
-
-
 export default function Header() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -29,9 +26,6 @@ export default function Header() {
     return () => clearInterval(interval)
   }, [currentIndex])
 
-  console.log('CUR INDEX', currentIndex)
-
-
   return (
     <div className="header__container">
       <div style={{ display: 'flex', flexDirection: 'row', border: 'solid red', justifyContent: 'space-evenly' }}>
@@ -39,9 +33,11 @@ export default function Header() {
        
         <div style={{ display: 'flex', flexDirection: 'column', borderRadius: '10px', boxShadow: '0 0 10px #dfdfdf', width: '600px', height: '500px', margin: '10px', padding: '10px'}}>
           <div>ABOUT ME</div>
-          <div> 
-            <CTA />
+          <div>
+
             <AboutText />
+            <CTA />
+
           </div>
         </div>
         <div style={{ display: 'flex', borderRadius: '10px', boxShadow: '0 0 10px #dfdfdf', width: '600px', height: '500px', margin: '10px',padding: '10px' }}>

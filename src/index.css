@@ -62,7 +62,8 @@ a:hover {
     }
 
 .btn-contact {
-   background:  #1d2731;
+   background:  #d3d3d3;
+    color: #000000;
 }
 
 .btn:hover {
