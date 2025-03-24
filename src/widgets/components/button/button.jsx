@@ -1,6 +1,6 @@
-import icons from "../../../assets/icons/sprite.svg";
+// import icons from "../../../assets/icons/sprite.svg";
 import React from "react";
-import CV from "../../../assets/CV.pdf";
+// import CV from "../../../assets/CV.pdf";
 
 
 const linkButton = ({
@@ -10,31 +10,25 @@ const linkButton = ({
     linkIcon,
     svgClassName,
     label
-                    }) => {
+}) => {
 
-return <a href={linkButtonRef} download className={className} style={linkButtonStyle}> {label}</a>
-
-
-
+return <a href={linkButtonRef} download className={className} style={linkButtonStyle}>{label}</a>
 
 }
 
-
-
-const iconLinkButton = (
-    {
-        iconLink,
-        iconClassName,
-        iconLinkHref
+const iconLinkButton = ({
+        IconLink,
+        IconClassName,
+        IconLinkHref
     }) => {
 
-    console.log('one',iconLink )
-    console.log('two', iconClassName)
-    console.log('three', iconLinkHref)
+    console.log('one',IconLink )
+    console.log('two', IconClassName)
+    console.log('three', IconLinkHref)
 
-    return <a href={iconLink}>
-        <svg className={iconClassName}>
-            <use xlinkHref={iconLinkHref} />
+    return <a href={IconLink}>
+        <svg className={IconClassName}>
+            <use xlinkHref={IconLinkHref} />
         </svg>
     </a>
 }

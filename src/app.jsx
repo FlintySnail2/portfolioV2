@@ -45,7 +45,7 @@ function App() {
     <div className='app__container'>
       <Navbar/>
       <Home/>
-      {/*<About/>*/}
+      <About/>
       {/*<Experience/>*/}
       {/*<Projects/>*/}
       {/*<Contact/>*/}

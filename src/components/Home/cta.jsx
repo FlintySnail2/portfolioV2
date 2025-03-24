@@ -23,9 +23,9 @@ export default function  CTA() {
                   ></iconLinkButton>
 
                   <iconLinkButton
-                      iconLink={"https://github.com/Flintysnail2/"}
-                      iconClassName={"icon-github"}
-                      iconLinkHref={`${icons}#icon-github`}
+                      iconlink={"https://github.com/Flintysnail2/"}
+                      iconclassname={"icon-github"}
+                      iconlinkhref={`${icons}#icon-github`}
                   ></iconLinkButton>
               </div>
 

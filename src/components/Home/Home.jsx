@@ -28,22 +28,17 @@ export default function Header() {
 
   return (
     <div className="header__container">
-      <div style={{ display: 'flex', flexDirection: 'row', border: 'solid red', justifyContent: 'space-evenly' }}>
-       
-       
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
         <div style={{ display: 'flex', flexDirection: 'column', borderRadius: '10px', boxShadow: '0 0 10px #dfdfdf', width: '600px', height: '500px', margin: '10px', padding: '10px'}}>
           <div>ABOUT ME</div>
           <div>
-
             <AboutText />
             <CTA />
-
           </div>
         </div>
         <div style={{ display: 'flex', borderRadius: '10px', boxShadow: '0 0 10px #dfdfdf', width: '600px', height: '500px', margin: '10px',padding: '10px' }}>
           Picture
         </div>
-
       </div>
       <div><Experience /></div>
     </div>
